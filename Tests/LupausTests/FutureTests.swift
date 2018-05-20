@@ -4,7 +4,7 @@ import XCTest
 
 final class FutureTests: XCTestCase {
     
-    static let allTests = [
+    static let allTests: [(String, (FutureTests) -> () throws -> Void)] = [
 
     ]
 }
