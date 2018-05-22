@@ -1,4 +1,4 @@
-@testable import Lupaus
+@testable import LupausAsync
 
 import XCTest
 
