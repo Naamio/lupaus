@@ -1,6 +1,6 @@
 #if os(Linux)
 
-@testable import LupausTests
+@testable import FutureTests
 
 import XCTest
 
