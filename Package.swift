@@ -29,26 +29,22 @@ let package = Package(
         .target(
             name: "LupausAsync",
             dependencies: [],
-            path: getSourcePath("Async"),
-            sources: ["."]
+            path: getSourcePath("Async")
         ),
         .target(
             name: "LupausAsyncNIO",
             dependencies: ["NIO"],
-            path: getSourcePath("Async"),
-            sources: ["."]
+            path: getSourcePath("AsyncNIO")
         ),
         .target(
             name: "LupausFutures",
             dependencies: [],
-            path: getSourcePath("Futures"),
-            sources: ["."]
+            path: getSourcePath("Futures")
         ),
         .testTarget(
             name: "LupausAsyncTests", 
             dependencies: ["LupausAsync"],
-            path: getTestPath("Async"),
-            sources: ["."]
+            path: getTestPath("Async")
         )
     ]
 )
