@@ -32,9 +32,9 @@ let package = Package(
             path: getSourcePath("Futures")
         ),
         .testTarget(
-            name: "LupausAsyncTests", 
-            dependencies: ["LupausAsync"],
-            path: getTestPath("Async")
+            name: "LupausFuturesTests", 
+            dependencies: ["LupausFutures"],
+            path: getTestPath("Futures")
         )
     ]
 )
