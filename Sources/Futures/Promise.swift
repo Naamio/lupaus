@@ -1,6 +1,3 @@
-import Dispatch
-import NIO
-
 /// Aliased `EventLoopFuture` from Swift NIO for Promise abstraction.
 //public typealias Promise = EventLoopPromise
 

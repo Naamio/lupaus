@@ -40,7 +40,7 @@ let package = Package(
         ),
         .target(
             name: "LupausFutures",
-            dependencies: ["LupausAsync"],
+            dependencies: [],
             path: getSourcePath("Futures"),
             sources: ["."]
         ),
