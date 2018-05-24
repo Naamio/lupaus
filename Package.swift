@@ -27,16 +27,6 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "LupausAsync",
-            dependencies: [],
-            path: getSourcePath("Async")
-        ),
-        .target(
-            name: "LupausAsyncNIO",
-            dependencies: ["NIO"],
-            path: getSourcePath("AsyncNIO")
-        ),
-        .target(
             name: "LupausFutures",
             dependencies: [],
             path: getSourcePath("Futures")
