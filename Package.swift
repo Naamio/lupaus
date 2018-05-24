@@ -19,7 +19,7 @@ let package = Package(
     products: [
         .library(
             name: "Lupaus",
-            targets: ["LupausAsync"]
+            targets: ["LupausFutures"]
         ),
     ],
     dependencies: [
@@ -28,8 +28,20 @@ let package = Package(
     targets: [
         .target(
             name: "LupausAsync",
+            dependencies: [],
+            path: getSourcePath("Async"),
+            sources: ["."]
+        ),
+        .target(
+            name: "LupausAsyncNIO",
             dependencies: ["NIO"],
             path: getSourcePath("Async"),
+            sources: ["."]
+        ),
+        .target(
+            name: "LupausFutures",
+            dependencies: ["LupausAsync"],
+            path: getSourcePath("Futures"),
             sources: ["."]
         ),
         .testTarget(
